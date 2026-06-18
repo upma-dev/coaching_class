@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Award, Star, Trophy, Users, ShieldAlert, Sparkles, Filter, CheckCircle2 } from "lucide-react";
 import { TOPPERS } from "../data";
 
+// Import Varsha Prajapati's image as high-quality static asset
+import varshaTopperImg from "../assets/images/varsha_topper_1781776662210.jpg";
+
 export default function ResultsSection() {
   const [selectedClassFilter, setSelectedClassFilter] = useState<"All" | "Class 10th" | "Class 12th">("All");
 
@@ -87,7 +90,7 @@ export default function ResultsSection() {
               <div className="md:col-span-4 flex justify-center">
                 <div className="relative w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-amber-400 custom-shadow-lg scale-95 md:scale-100 hover:scale-105 transition-transform duration-300">
                   <img
-                    src="/src/assets/images/varsha_topper_1781776662210.jpg"
+                    src={varshaTopperImg}
                     alt="Varsha Prajapati"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover"

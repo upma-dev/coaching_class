@@ -1,5 +1,18 @@
 import { Course, StudentTopper, Notice, GalleryItem, Branch, Teacher } from "./types";
 
+// Static asset imports to ensure correct compilation and hashing by Vite in production builds
+import jiveshSir from "./assets/images/jivesh_sir_1781776625628.jpg";
+import sanjuSir from "./assets/images/sanju_sir_1781776643674.jpg";
+import varshaTopper from "./assets/images/varsha_topper_1781776662210.jpg";
+import mahimaRathore from "./assets/images/mahima_rathore_1781777533824.jpg";
+import chintanJain from "./assets/images/chintan_jain_1781777549844.jpg";
+import dakshParmar from "./assets/images/daksh_parmar_1781777566363.jpg";
+import jayantMalviya from "./assets/images/jayant_malviya_1781777578750.jpg";
+import vinaySisodiya from "./assets/images/vinay_sisodiya_1781777592300.jpg";
+import khayatiGarg from "./assets/images/khayati_garg_1781777604253.jpg";
+import galleryHoli from "./assets/images/gallery_holi_1781777620975.jpg";
+import galleryBoardPrep from "./assets/images/gallery_board_prep_1781777637037.jpg";
+
 export const TEACHERS: Teacher[] = [
   {
     name: "Jivesh Sir",
@@ -7,7 +20,7 @@ export const TEACHERS: Teacher[] = [
     qualification: "M.A. & B.Ed. (Specialised in English Language & Arts)",
     role: "Co-Director & Senior Educator",
     speciality: "Class 11-12th (Arts & English), Spoken English & Board Mentorship",
-    imageUrl: "/src/assets/images/jivesh_sir_1781776625628.jpg",
+    imageUrl: jiveshSir,
     bio: "Guiding generations of students to brilliant academic success for over 30 years with an unwavering commitment to personalized learning and disciplined habits."
   },
   {
@@ -16,7 +29,7 @@ export const TEACHERS: Teacher[] = [
     qualification: "M.Sc. & Dedicated Subject Specialist",
     role: "Co-Director & Lead Educator",
     speciality: "Class 1st to 10th (All Subjects) & Performance Tracking",
-    imageUrl: "/src/assets/images/sanju_sir_1781776643674.jpg",
+    imageUrl: sanjuSir,
     bio: "Passionately driving early stage conceptual clarity, regular evaluation cycles, and special supportive guidance programs for every student."
   }
 ];
@@ -76,7 +89,7 @@ export const TOPPERS: StudentTopper[] = [
     grade: "Class 12th",
     score: "82%",
     stream: "Arts",
-    imageUrl: "/src/assets/images/varsha_topper_1781776662210.jpg",
+    imageUrl: varshaTopper,
     rank: "Arts Stream Topper",
     year: "2026"
   },
@@ -86,7 +99,7 @@ export const TOPPERS: StudentTopper[] = [
     grade: "Class 10th",
     score: "91%",
     rank: "Rank 1",
-    imageUrl: "/src/assets/images/mahima_rathore_1781777533824.jpg",
+    imageUrl: mahimaRathore,
     year: "2026"
   },
   {
@@ -95,7 +108,7 @@ export const TOPPERS: StudentTopper[] = [
     grade: "Class 10th",
     score: "88%",
     rank: "Rank 2",
-    imageUrl: "/src/assets/images/chintan_jain_1781777549844.jpg",
+    imageUrl: chintanJain,
     year: "2026"
   },
   {
@@ -104,7 +117,7 @@ export const TOPPERS: StudentTopper[] = [
     grade: "Class 10th",
     score: "87.4%",
     rank: "Rank 3",
-    imageUrl: "/src/assets/images/daksh_parmar_1781777566363.jpg",
+    imageUrl: dakshParmar,
     year: "2026"
   },
   {
@@ -113,7 +126,7 @@ export const TOPPERS: StudentTopper[] = [
     grade: "Class 10th",
     score: "86.8%",
     rank: "Rank 4",
-    imageUrl: "/src/assets/images/jayant_malviya_1781777578750.jpg",
+    imageUrl: jayantMalviya,
     year: "2026"
   },
   {
@@ -122,7 +135,7 @@ export const TOPPERS: StudentTopper[] = [
     grade: "Class 10th",
     score: "86%",
     rank: "Rank 5",
-    imageUrl: "/src/assets/images/vinay_sisodiya_1781777592300.jpg",
+    imageUrl: vinaySisodiya,
     year: "2026"
   },
   {
@@ -131,7 +144,7 @@ export const TOPPERS: StudentTopper[] = [
     grade: "Class 10th",
     score: "85%",
     rank: "Rank 6",
-    imageUrl: "/src/assets/images/khayati_garg_178177604253.jpg",
+    imageUrl: khayatiGarg,
     year: "2026"
   }
 ];
@@ -176,14 +189,14 @@ export const GALLERY: GalleryItem[] = [
     id: "gal-1",
     title: "🌈 Holi 2K26 Splendid Celebrations",
     category: "Celebrations",
-    imageUrl: "/src/assets/images/gallery_holi_1781777620975.jpg",
+    imageUrl: galleryHoli,
     description: "Joyful colors, sweets, and laughter with teachers Jivesh Sir, Sanju Sir, and over a hundred smiling students."
   },
   {
     id: "gal-2",
     title: "🎓 Class 10th Board Exams Departure",
     category: "Academic",
-    imageUrl: "/src/assets/images/gallery_board_prep_1781777637037.jpg",
+    imageUrl: galleryBoardPrep,
     description: "Last-minute tips, guidelines, sweets, and custom-designed support packets handed out to our bright Class 10th champions."
   },
   {

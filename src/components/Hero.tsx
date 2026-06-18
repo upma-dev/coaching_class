@@ -20,17 +20,22 @@ import {
 } from "lucide-react";
 import { TEACHERS, NOTICES } from "../data";
 
+// Import Hero Background slider images to ensure correct bundling in production
+import studyDeskHero from "../assets/images/study_desk_hero_1781776563840.jpg";
+import classroomHero from "../assets/images/classroom_hero_1781776585660.jpg";
+import flatlayHero from "../assets/images/flatlay_hero_1781776608067.jpg";
+
 interface HeroProps {
   onOpenAdmissionModal: () => void;
   onOpenEnquiryModal: () => void;
 }
 
 export default function Hero({ onOpenAdmissionModal, onOpenEnquiryModal }: HeroProps) {
-  // Automatic Background slider image list
+  // Automatic Background slider image list using imported static resource variables
   const bgImages = [
-    "/src/assets/images/study_desk_hero_1781776563840.jpg",
-    "/src/assets/images/classroom_hero_1781776585660.jpg",
-    "/src/assets/images/flatlay_hero_1781776608067.jpg"
+    studyDeskHero,
+    classroomHero,
+    flatlayHero
   ];
 
   const [currentBgIndex, setCurrentBgIndex] = useState(0);
