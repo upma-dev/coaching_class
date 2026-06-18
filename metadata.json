@@ -1,0 +1,6 @@
+{
+  "name": "Safalta Coaching Classes",
+  "description": "Premium educational coaching platform in Susner for classes 1-12 and spoken English, boasting 32+ years of guiding students to success.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
