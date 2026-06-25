@@ -49,7 +49,7 @@ export default function FeeEnquiryModal({ isOpen, onClose }: FeeEnquiryModalProp
   const handleWhatsAppEnquiry = () => {
     const message = `Hello Safalta Coaching Classes! I submitted an enquiry for student: *${studentName}* for *Class ${selectedGrade}*. Please share detailed discount slabs, scholarship structures, and batch timings. Contact: ${mobileNumber}`;
     const encoded = encodeURIComponent(message);
-    window.open(`https://wa.me/919098816538?text=${encoded}`, "_blank");
+    window.open(`https://wa.me/7354126134?text=${encoded}`, "_blank");
   };
 
   return (
